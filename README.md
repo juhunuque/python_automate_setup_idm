@@ -49,20 +49,26 @@ Or you can use this shell script in order to kill all the python processes:
 ## Extra notes
 If you need to install someone of the requirements, you can refer to the following links (They are for CentOs, if you are 
 using another OS, please check for the correct documentation)
+
 ### PIP IN CENTOS: 
 http://www.liquidweb.com/kb/how-to-install-pip-on-centos-7/
 - curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
 - python get-pip.py
 
+### GIT IN CENTOS:
+- sudo yum install git
+
 ### GCC: 
 http://www.cyberciti.biz/faq/centos-rhel-7-redhat-linux-install-gcc-compiler-development-tools
+- sudo yum group install "Development Tools" 
 
 ###  INSTALL PYTHON DEV: 
 http://stackoverflow.com/questions/11094718/error-command-gcc-failed-with-exit-status-1-while-installing-eventlet
 - sudo yum install python-devel
 - sudo yum install libevent-devel
-- easy_install gevent
-- yum install libffi-devel
+- sudo easy_install gevent
+- sudo yum install libffi-devel
+- sudo yum install openssl-devel
 
 ## Important shell commands
 - chmod u+x <file_name>: Grant permissions

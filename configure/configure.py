@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 import os
 import sys
+import subprocess
+import time
 from utils import resolve_config_parameters
 
 if sys.version_info[0] == 2:
@@ -23,6 +25,7 @@ git_functional_url = resolve_config_parameters(config_parser, 'GIT SETTINGS', 'G
 # LOCAL SETTINGS
 project_folder = resolve_config_parameters(config_parser, 'LOCAL SETTINGS', 'PROJECT_FOLDER')
 python_exec_cmd = resolve_config_parameters(config_parser, 'LOCAL SETTINGS', 'PYTHON_CMD')
+nohup_cmd_global = resolve_config_parameters(config_parser, 'LOCAL SETTINGS', 'NOHUP_CMD')
 
 # P2020 SETTINGS
 p2020_token_server = resolve_config_parameters(config_parser, 'P2020 SETTINGS', 'P2020_TOKEN_SERVER')
